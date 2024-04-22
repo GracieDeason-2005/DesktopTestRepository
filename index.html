@@ -49,8 +49,8 @@ function malignantAdd() {
 }
 
 function diagnosisResults() {
-    var benignPercent = (benign_count / 6) * 100;
-    var malignantPercent = (malignant_count / 6) * 100;
+    var benignPercent = (benign_count /5) * 100;
+    var malignantPercent = (malignant_count /5) * 100;
     var resultText = document.getElementById("results");
     resultText.innerHTML = "Probability it is benign = " + benignPercent.toFixed(2) + "%" + "<br> Probability it is malignant = " + malignantPercent.toFixed(2) + "%";
 }
