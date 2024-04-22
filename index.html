@@ -106,6 +106,14 @@ var reader = new FileReader();
         }
 //When the button that has the malignantAdd function is clicked the total score for malignant adds up by one//
 
+	function diagnosisResults(){
+		var benignPercent = (benign_count/4) * 100;
+		var malignantPercent = (malignant_count/4) * 100;
+		var resultText = document.getElementById("results");
+		resultText.innerHTML = "Probability it is benign = " + benignPercent + "%" + "<br> Probability it is malignant = " + malignantPercent + "%";
+	}
+//The given function calculates the probability of the mole being benign versus the probability of it being malignant by dividing the benign and malignant counts by four and then multiplying by a 100//
+
 
 </script>
 
