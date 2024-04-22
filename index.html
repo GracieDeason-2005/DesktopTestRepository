@@ -41,19 +41,20 @@ var malignant_count = 0;
 function benignAdd() {
     benign_count = benign_count + 1;
     alert("benign count : " + benign_count);
-}
+}//Establishes initial value for benign variable and malignant variable count at zero//
 
 function malignantAdd() {
     malignant_count = malignant_count + 1;
     alert("malignant count : " + malignant_count);
-}
+}//When the button that has the malignantAdd function is clicked the total score for malignant adds up by one//
 
 function diagnosisResults() {
     var benignPercent = (benign_count /5) * 100;
     var malignantPercent = (malignant_count /5) * 100;
     var resultText = document.getElementById("results");
     resultText.innerHTML = "Probability it is benign = " + benignPercent + "%" + "<br> Probability it is malignant = " + malignantPercent + "%";
-}
+}//The given function calculates the probability of the mole being benign versus the probability of it being malignant by dividing the benign and malignant counts by four and then multiplying by a 100//
+
 </script>
 
 
